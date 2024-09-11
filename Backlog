@@ -1,0 +1,98 @@
+1- Cadastro de produtos
+Realizar o cadastro de produtos do hortifrúti, como frutas, verduras, legumes, entre outros.
+
+Como tarefa, devemos criar um menu de cadastro e inserir campos para o nome do produto, categoria, quantidade e preço.
+Após isso, realizar a validação.
+
+2- Atualização de produtos
+Atualizar as informações dos produtos existentes, como a quantidade ou o preço.
+
+Como tarefa, vamos implementar uma função de pesquisa por nome ou código do produto para facilitar a busca desses produtos já cadastrados no sistema, permitindo assim a edição e o salvamento.
+
+3- Remoção do produto
+
+Objetivo: remover o produto do sistema com uma ação que exclui permanentemente o item
+
+Tarefa:
+Acessar o sistema com as credenciais de administrador, localizar o produto, selecionar o produto que deve ser removido, iniciar o processo, confirmar a remoção e atualizar no sistema
+
+4- Consulta de estoque 
+
+ Objetivo:
+Avaliar os níveis atuais de estoque, identificar itens com baixo estoque planejar ação corretivas para otimizar a gestão de inventário
+
+Tarefas: 
+Implementar função de exibição do estoque (Dados do estoque) com descrição do produto quantidade em estoque quantidade mínima e status do estoque.
+Analisar e encontrar os produtos com baixo estoque e reabastecer
+
+5- Venda de Produtos.
+
+Objetivo: Registrar e finalizar a compra e assim efetuar a saída da mercadoria, seja em estoque ou em "loja".
+
+O que precisa ter:
+
+Pagina de Venda; Onde o Usuário irá registrar e finalizar a compra.
+
+
+6- Relatório de Venda.
+
+Objetivo: Monitoramento do desempenho com base nas vendas realizadas em determinado período, facilitando a formação de estratégia de negócio, para tomada de decisões, baseada em dados reais.
+
+7- Tela de Login:
+
+Campos pra nome de usuário e senha.
+Botão de login pra fazer a autenticação.
+Funções do Login:
+
+Autenticação: Verificar se as credenciais estão corretas comparando com o que está guardado no banco de dados de forma segura.
+Autorização: Definir o que cada tipo de usuário (administrador, caixa, gerente, etc.) pode acessar e fazer.
+Tarefas:
+
+Criar Login pra Administrador: Configurar um perfil de administrador com permissões completas pra gerenciar usuários e configurações do sistema.
+Validar Credenciais: Usar métodos de criptografia como hashing e salting pra proteger as senhas e garantir a segurança dos dados.
+
+8- Segurança
+
+O que é: Segurança envolve proteger o sistema e os dados contra acessos não autorizados e ameaças. Isso inclui criptografar dados, gerenciar acessos e monitorar atividades.
+
+O que precisa ter:
+
+Criptografia:
+
+Senhas: Guardar as senhas de forma criptografada.
+Comunicações: Usar HTTPS pra proteger a troca de dados.
+Controle de Acesso:
+
+Permissões: Configurar o que cada perfil de usuário pode acessar e modificar.
+Sessões: Gerenciar sessões pra evitar acessos indevidos depois do login.
+Monitoramento e Auditoria:
+
+Logs de Acesso: Registrar as atividades de login e acesso ao sistema.
+Alertas de Segurança: Notificar sobre eventos críticos e atividades suspeitas.
+Tarefas:
+
+Implementar Criptografia e Proteção de Dados: Garantir que dados e credenciais estejam seguros, tanto quando estão guardados quanto quando estão sendo transmitidos.
+Configurar Controle de Acesso: Definir e aplicar regras para o que cada perfil pode acessar e modificar.
+Monitorar Atividades e Auditar: Criar logs e alertas pra acompanhar e revisar as atividades dos usuários e eventos importantes.
+3. Sair do Sistema
+
+O que é: A função de logout permite que os usuários terminem suas sessões de forma segura, garantindo que ninguém mais possa acessar o sistema a partir da sessão atual depois que o usuário sair.
+
+O que precisa ter:
+
+Função de Logout:
+Desconexão Segura: Encerrar a sessão e garantir que todos os dados temporários sejam apagados.
+Redirecionamento: Levar o usuário de volta à tela de login ou a uma página segura após o logout.
+Tarefas:
+
+Implementar Função de Logout: Criar uma função que finalize a sessão, limpe dados temporários e remova informações de autenticação da memória.
+Segurança Pós-Logout: Garantir que qualquer tentativa de acessar o sistema depois do logout leve o usuário de volta à tela de login.
+Confirmação de Logout: (Opcional) Oferecer uma confirmação pra garantir que o usuário realmente quer sair do sistema.
+Integração e Fluxo
+
+Todo o sistema de login, segurança e logout faz parte da rede da loja de hortifrúti. O fluxo é o seguinte:
+
+Login: Usuários entram no sistema com suas credenciais, que são verificadas pra autenticação e autorização.
+Segurança: Após o login, as permissões são aplicadas e as atividades são monitoradas pra manter a segurança. Dados sensíveis são protegidos por criptografia e sessões são gerenciadas.
+Logout: Quando um usuário termina seu trabalho, usa a função de logout pra desconectar de forma segura, evitando acessos não autorizados.
+Essa abordagem garante que o sistema da loja de hortifrúti seja seguro, eficiente e acessível só pra quem está autorizado, mantendo os dados e operações protegidos.
